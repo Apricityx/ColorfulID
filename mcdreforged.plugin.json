@@ -1,0 +1,14 @@
+{
+  "id": "colorful_id",
+  "version": "1.0.0",
+  "name": "Colorful ID",
+  "description": {
+    "en_us": "Colorful player names!",
+    "zh_cn": "让玩家的名字五颜六色！"
+  },
+  "author": "Apricityx_",
+  "link": "https://github.com/Apricityx/ColorfulID",
+  "resources": [
+    "LICENSE"
+  ]
+}
