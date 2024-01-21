@@ -28,59 +28,58 @@ def execute(source: 'PlayerCommandSource', info: Info):  # source：是一个玩
     get_server = source.get_server()
     if source.is_player:
         arg = source.get_info().content.split(' ')[1]
-        get_server.execute('say ' + '获取到参数：' + arg)
         if arg == 'install':
             init_teams(get_server)
         elif arg == 'uninstall':
             uninstall(get_server)
         elif arg == 'red':
             get_server.execute('execute as ' + source.player + ' run team join __red ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'blue':
             get_server.execute('execute as ' + source.player + ' run team join __blue ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'green':
             get_server.execute('execute as ' + source.player + ' run team join __green ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'yellow':
             get_server.execute('execute as ' + source.player + ' run team join __yellow ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'light_purple':
             get_server.execute('execute as ' + source.player + ' run team join __light_purple ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'aqua':
             get_server.execute('execute as ' + source.player + ' run team join __aqua ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'white':
             get_server.execute('execute as ' + source.player + ' run team join __white ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'black':
             get_server.execute('execute as ' + source.player + ' run team join __black ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'gray':
             get_server.execute('execute as ' + source.player + ' run team join __gray ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'gold':
             get_server.execute('execute as ' + source.player + ' run team join __gold ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'dark_red':
             get_server.execute('execute as ' + source.player + ' run team join __dark_red ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'dark_blue':
             get_server.execute('execute as ' + source.player + ' run team join __dark_blue ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'dark_green':
             get_server.execute('execute as ' + source.player + ' run team join __dark_green ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'dark_aqua':
             get_server.execute('execute as ' + source.player + ' run team join __dark_aqua ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'dark_purple':
             get_server.execute('execute as ' + source.player + ' run team join __dark_purple ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         elif arg == 'dark_gray':
             get_server.execute('execute as ' + source.player + ' run team join __dark_gray ' + source.player)
-            get_server.execute('tell @a ' + '已将' + source.player + '加入红队')
+            get_server.execute('tell @a ' + '已将' + source.player + '染色')
         else:
             get_server.execute(
                 'tellraw ' + source.player + ' "可用颜色：red,blue,green,yellow,purple,aqua,white,black,gray,gold,dark_red,dark_blue,dark_green,dark_aqua,dark_purple,dark_gray,dark_gold" ')
