@@ -82,7 +82,7 @@ def execute(source: 'PlayerCommandSource', info: Info):  # source：是一个玩
             get_server.execute('tell @a ' + '已将' + source.player + '染色')
         else:
             get_server.execute(
-                'tellraw ' + source.player + ' "可用颜色：red,blue,green,yellow,purple,aqua,white,black,gray,gold,dark_red,dark_blue,dark_green,dark_aqua,dark_purple,dark_gray,dark_gold" ')
+                'tellraw ' + source.player + ' "可用颜色：red,blue,green,yellow,light_purple,aqua,white,black,gray,gold,dark_red,dark_blue,dark_green,dark_aqua,dark_purple,dark_gray,dark_gold" ')
     else:
         get_server.logger.info('!!color 只能由玩家执行')
 
